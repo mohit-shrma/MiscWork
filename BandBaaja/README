@@ -1,0 +1,6 @@
+Code for the "BandBaaja" app which discovers musical events around the user by tracking facebook page of venues around and alert the user via mobile app.
+
+BandBaaja web contains the backend and landing page for users.
+BandBaaja android contains code for android mobile app.
+
+After version 1 work was discontinued due to lack of funding and not sufficientmarketing.
