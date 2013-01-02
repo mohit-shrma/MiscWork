@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/view.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../scripts/find_results.js"></script>
+        <title>Gigs View</title>
+    </head>
+    <body>
+        <header>
+            <div id="welcomeblock">
+                <p>Hello {{username}}! 
+                {%if success_msg%}
+                  {{success_msg}}.
+                {% endif %}
+                {{gigslen}} results found.</p>
+            </div>
+        </header>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="/admin/adminpage">New</a></li>
+                    <li><a href="/admin/view">View</a></li>
+                    <li><a href="/admin/find">Find</a></li>
+                    <li><a href="/feedback">Feedback</a></li>
+                    <li><a href="/admin/viewfeedback">View feedback</a></li>
+                </ul>
+            </nav>
+            <section>
+              <form action="" method="POST" id="viewform">
+               
+                <input type="hidden" name="lastResultIndex" value="{{lastResultIndex}}">
+                <input type="hidden" name="goToNext" id="goToNext" value="">
+                <input type="hidden" name="goToPrevious" id="goToPrevious" value="">
+                <!-- PARAMETERS FROM PREVIOUS SEARCH PAGE-->                
+                <input type="hidden" name="artist"  value="{{artist}}">
+                <input type="hidden" name="venue"  value="{{venue}}">
+                <input type="hidden" name="city_loc"  value="{{city_loc}}">
+                <input type="hidden" name="city"  value="{{city}}">
+                <input type="hidden" name="genre"  value="{{genre}}">
+                <input type="hidden" name="date_time"  value="{{date_time}}">
+                
+                <table>
+                    <thead>
+                        <th></th>
+                        <th scope="col" abbr="Artist">Artist</th>
+                        <th scope="col" abbr="Venue">Venue</th>
+                        <th scope="col" abbr="City_Loc">Location in city</th>
+                        <th scope="col" abbr="City">City</th>
+                        <th scope="col" abbr="Date_Time">Timings</th>
+                        <th scope="col" abbr="Lat_Long">GPS Coords</th>
+                        <th scope="col" abbr="Id">Key Id</th>
+                    </thead>
+                    <tbody>
+                      {% for gig in gigs %}
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="gig_id" value="{{ gig.key.id }}"/>
+                            </td>                                
+                            <td>
+                                {{ gig.artist|title }}
+                            </td>                                
+                            <td>
+                                {{ gig.venue|title }}
+                            </td>                                
+                            <td>
+                                {{ gig.city_loc|title }}
+                            </td>                                
+                            <td>
+                                {{ gig.city|title }}
+                            </td>                                
+                            <td>
+                                {{ gig.timing|date:"D, d M Y, H:i" }}
+                            </td>                                
+                            <td>
+                                {{ gig.latlong }}
+                            </td>
+                            <td>
+                                {{ gig.key.id }}
+                            </td>                                
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                </table>
+                                    
+                <div class="buttonset">
+                    <div class="left">
+                        <button type="button" id="edit">Edit</button>
+                        <button type="button" id="delete">Delete</button>    
+                    </div>
+                    <div class="right">
+                        {% if previous %}
+                          <button type="button" id="previous">Previous</button>
+                        {% endif %}
+                        {% if next %}
+                          <button type="button" id="next">Next</button>
+                        {% endif %}
+                    </div>
+                    
+                </div>
+              </form>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <title>BandBaaja</title>
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link href="../stylesheets/home.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="../scripts/modernizr.custom.js"></script>
+        <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../scripts/home.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <script type="text/javascript" src="../scripts/analytics.js"></script>
+    </head>
+    <body>
+        <header id="pageHeader">
+            <!-- div to hold image or "BandBaaja" header text -->
+            <div id="appTitleContainer">
+                <h2 class="appNameTitle">BandBaaja</h2>
+            </div>
+            <!-- div to hold bandbaaja logo -->
+            <div id="logoContainer">
+                <img src="../images/logo_trans.png" alt="Band Baaja logo"/>
+            </div>
+        </header>
+        <div id="content">
+            <!-- section to hold sliding images and corresponding text -->
+            <section id="imageContent">
+                <!-- div to hold screenshots -->
+                <div id="imageContainersContainer">
+                    <div id="phoneImgContainer">
+                        <div id="screenshotsContainer">
+                          <div id="screenshots">
+                            <img class="screenshot" id="screenshot-0" src="../images/screenshot-0.png" />
+                            <img class="screenshot" id="screenshot-1" src="../images/screenshot-1.png" />
+                            <img class="screenshot" id="screenshot-2" src="../images/screenshot-2.png" />
+                            <img class="screenshot" id="screenshot-3" src="../images/screenshot-3.png" />
+                            <img class="screenshot" id="screenshot-4" src="../images/screenshot-4.png" />
+                          </div>
+                        </div>
+                    </div>
+                </div>    
+                
+                <!-- div to hold generic text and screenshot description -->
+                <div id="imageContentDescription">
+                    <!-- div to hold generic text -->
+                    <div id="appDescriptionText">
+                        <h3>Your own "desi" live local music events search and share app</h3>
+                    </div>
+                    <!-- div to hold screenshot description -->
+                    <div id="descriptionsContainer">
+                        <div id="description">
+                            <h5 id="description-0" class="descriptionText">Choose your hot'n happening city</h5>
+                            <h5 id="description-1" class="descriptionText">Know all events happening around you</h5>
+                            <h5 id="description-2" class="descriptionText">Bookmark important ones for your reference</h5>
+                            <h5 id="description-3" class="descriptionText">View venue location on map</h5>
+                            <h5 id="description-4" class="descriptionText">Let your loved ones know where you will be hanging out</h5>
+                        </div>    
+                    </div>
+                    
+                    <!-- div to hold facebook like button -->
+                    
+                    <div id="like">
+                        <div id="fb-root"></div>
+                        <script>
+                          window.fbAsyncInit = function() {
+                            FB.init({appId: '210899582273494', status: true, cookie: true,
+                                     xfbml: true});
+                          };
+                          (function() {
+                            var e = document.createElement('script'); e.async = true;
+                            e.src = document.location.protocol +
+                              '//connect.facebook.net/en_US/all.js';
+                            document.getElementById('fb-root').appendChild(e);
+                          }());
+                        </script>
+                        <script src="http://connect.facebook.net/en_US/all.js#appId=210899582273494&amp;xfbml=1"></script>
+                        <fb:like href="" send="true" width="450" show_faces="false" colorscheme="dark" font=""></fb:like>
+                        
+                        <!-- Place this tag where you want the +1 button to render -->
+                        <div id="plusOne">
+                          <g:plusone href="www.thebandbaaja.com"></g:plusone>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- section to hold how to download information -->
+            <section id="downloadSection">
+                <article id="downloadArticle">
+                    <header>
+                        <h3>Download the app</h3>
+                    </header>
+                    <section>
+                        <!-- div to hold QR code image --> 
+                        <div>
+                            <img src="../images/barcode.png" />
+                        </div>
+                        <!-- div to hold download insruction text -->
+                        <div id="downloadInstruction">
+                            <span> To download BandBaaja for Android you can scan the barcode to the left or follow following steps</span>
+                            <ol>
+                                <li>Open the Android Market application on your mobile phone.</li>
+                                <li>In the Android Market application, click the search button and write 'bandbaaja'</li>
+                                <li>Click on the BandBaaja application when it appears in the search results.</li>
+                                <li>Click the install button at the bottom of the page and click Ok on the next screen.</li>
+                                <li>The application is now being downloaded to the phone and you will get a notification when it is ready for use.</li>
+                            </ol>
+                        </div>    
+                    </section>    
+                </article>
+            </section>
+        </div>
+        <footer>
+            <!-- div to hold about link -->
+            <div id="about">
+                <a href="about.html">About</a>
+                
+            </div>
+            <div id="now_andrmkt">
+                <a href="http://market.android.com/details?id=com.bandbaaja">
+                    <img src="http://www.android.com/images/brand/60_avail_market_logo2.png"
+                      alt="Available in Android Market" />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

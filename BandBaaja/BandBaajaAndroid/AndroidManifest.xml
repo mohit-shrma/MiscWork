@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bandbaaja"
+      android:versionCode="1"
+      android:versionName="1.0">
+    
+    <application android:icon="@drawable/ic_launcher" 
+                 android:label="@string/app_name">
+
+        <uses-library android:name="com.google.android.maps" />
+        
+        <service android:name=".update.UpdateService">
+        </service>
+        
+        <receiver android:name=".update.AlarmReceiver">
+        </receiver>
+        
+        <receiver android:name=".update.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".update.UpdateRateMonitorReceiver">
+            <intent-filter>
+                <action
+                 android:name="android.intent.action.BATTERY_LOW"/>
+                <action
+                 android:name="android.intent.action.BATTERY_OKAY"/>
+                <action
+                 android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action
+                 android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity android:name=".BandBaaja" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".SceneMap" android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        
+        <activity android:name=".BandBaajaTabs"
+                    android:windowSoftInputMode="stateHidden"
+                    android:screenOrientation="portrait"/>
+        <activity android:name=".GigsListActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".BookmarksActivity"/>
+        <activity android:name=".GigDetailActivity"
+                    android:screenOrientation="portrait"/>
+        <activity android:name=".ShareActivity"
+                    android:screenOrientation="portrait"/>
+        <activity android:name=".WelcomePrefActivity"
+                    android:screenOrientation="portrait"/>
+        <activity android:name=".FeedbackActivity"
+                    android:screenOrientation="portrait"/>
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-sdk android:minSdkVersion="8"/>
+            
+</manifest>

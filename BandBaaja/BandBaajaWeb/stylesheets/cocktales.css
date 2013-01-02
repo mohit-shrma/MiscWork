@@ -1,0 +1,16 @@
+body {
+    background-color:#074945;
+    display:-webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-pack    :   center;
+}
+
+#moreInfo {
+    display:-webkit-box;
+    -webkit-box-orient  :   vertical;
+    color: white;
+}
+
+#moreInfo a {
+    color: white;
+}

@@ -1,0 +1,32 @@
+/*imports*/
+@import url("common.css");
+
+
+body #main section form {
+    padding :   10px;
+}
+
+body #main section form .fieldsets {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   vertical;
+    padding             :   5px;
+}
+
+body #main section form .fieldsets label {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   start;
+}
+
+body #main section form .fieldsets .forminput {
+    -webkit-box-flex    :   1;
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   start;
+}
+
+body #main section form .buttonset {
+    margin-top          : 10px;    
+}

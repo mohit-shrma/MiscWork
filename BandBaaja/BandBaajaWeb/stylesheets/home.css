@@ -1,0 +1,768 @@
+/*imports*/
+@import url("publicSiteCommon.css");
+@import url(http://fonts.googleapis.com/css?family=Redressed&v2);
+
+/*
+ * page specific styling
+ */
+
+
+body {
+    background-color    :   black;
+    background-image    :   url('../images/RockConcertWallGraphic.jpg');
+    background-repeat   :   no-repeat;
+    background-position :   center top;
+    
+    display             :  -moz-box;
+    -moz-box-orient     :   vertical;
+    
+    display             :  -webkit-box;
+    -webkit-box-orient     :   vertical;
+    
+    display             :  box;
+    box-orient          :   vertical;
+    
+    
+}
+
+.no-flexbox body {
+	 
+	   width : 900px;
+	   margin  : 0 auto;
+	
+	}
+
+body header {
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+    
+    margin-bottom       :   25px;
+}
+
+body #pageHeader {
+    
+}
+
+body header #appTitleContainer {
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   center;
+    -webkit-box-flex    :   1;
+    
+    -moz-box-orient  :   horizontal;
+    -moz-box-align   :   center;
+    -moz-box-pack    :   center;
+    -moz-box-flex    :   1;
+    
+    box-orient  :   horizontal;
+    box-align   :   center;
+    box-pack    :   center;
+    box-flex    :   1;
+}
+
+
+
+body header #appTitleContainer {
+    font-family                 :   'Redressed','Trebuchet MS', Trebuchet, 
+                                     'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+                                     Arial, sans-serif;
+    font-size                   :   60px;
+    font-style                  : normal;
+    font-weight                 : 400;
+    margin-top                  : 30px;
+    
+    -webkit-text-fill-color     : black;
+    -webkit-text-stroke-color   : black;
+    -webkit-text-stroke-width   : 1px;
+    -webkit-user-select         : none;
+    
+    -moz-text-fill-color     : black;
+    -moz-text-stroke-color   : black;
+    -moz-text-stroke-width   : 1px;
+    -moz-user-select         : none;
+    
+    text-fill-color     : black;
+    text-stroke-color   : black;
+    text-stroke-width   : 1px;
+    user-select         : none;
+    
+    cursor              : pointer;
+}
+
+.no-flexbox header #appTitleContainer h2 {
+    float:left;
+	  }
+
+body header #logoContainer {
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   center;
+    -webkit-box-flex    :   1;
+    
+    -moz-box-orient  :   horizontal;
+    -moz-box-align   :   center;
+    -moz-box-pack    :   center;
+    -moz-box-flex    :   1;
+    
+    box-orient  :   horizontal;
+    box-align   :   center;
+    box-pack    :   center;
+    box-flex    :   1;
+}
+
+.no-flexbox #logoContainer {
+	float:right;
+}
+
+body #content {
+    display             :  -moz-box;
+    -moz-box-orient  :   vertical;
+    
+    display             :  -webkit-box;
+    -webkit-box-orient  :   vertical;
+    
+    display             :  box;
+    box-orient          :   vertical; 
+}
+
+.no-flexbox body #content {
+  clear:both;
+}
+
+body #content #imageContent {
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+}
+
+body #content #imageContent #imageContainersContainer {
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+    
+    -webkit-box-pack    :   end;
+    -moz-box-pack       :   end;
+    box-pack            :   end;
+
+    background-image    :   url('../images/galaxy3_trans_small2.png');
+    background-repeat   :   no-repeat;
+    background-position :   right top;
+    padding-top         :   70px;
+    margin-right        :   30px;
+}
+
+
+.no-flexbox body #content #imageContent #imageContainersContainer {
+    float   : left;
+    background-position :   left top;
+    position  : relative;
+    width:230px;
+}
+
+
+body #content #imageContent #phoneImgContainer {
+    
+    overflow             :   hidden;
+    width                :   175px;
+    height               :   460px;
+    margin-right         :   25px;
+}
+
+.no-flexbox body #content #imageContent #phoneImgContainer {
+	margin-left  : 26px;
+} 
+
+
+@-moz-keyframes imageVertSlide {
+            
+            /*translate by image height*/
+                       
+            from,15% {
+                -moz-transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                -moz-transform   :   translate(0px, -292px);
+            }
+            
+            
+            40%,55% {
+                -moz-transform   :   translate(0px, -584px);
+            }
+            
+            60%,75% {
+                -moz-transform   :   translate(0px, -876px);
+            }
+            
+            
+            80%,95% {
+                -moz-transform   :   translate(0px, -1168px);
+            }
+            
+            to {
+                -moz-transform   :   translate(0px, 0px);
+            }
+            
+        }
+        
+@-webkit-keyframes imageVertSlide {
+
+             /*translate by image height*/
+              
+            from,15% {
+                -webkit-transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                -webkit-transform   :   translate(0px, -292px);
+            }
+            
+            
+            40%,55% {
+                -webkit-transform   :   translate(0px, -584px);
+            }
+            
+            60%,75% {
+                -webkit-transform   :   translate(0px, -876px);
+            }
+            
+            
+            80%,95% {
+                -webkit-transform   :   translate(0px, -1168px);
+            }
+            
+            to {
+                -webkit-transform   :   translate(0px, 0px);
+            }
+            
+        }
+
+@keyframes imageVertSlide {
+            
+            /*translate by image height*/
+            
+            from,15% {
+                transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                transform   :   translate(0px, -292px);
+            }
+            
+            
+            40%,55% {
+                transform   :   translate(0px, -584px);
+            }
+            
+            60%,75% {
+                transform   :   translate(0px, -876px);
+            }
+            
+            
+            80%,95% {
+                transform   :   translate(0px, -1168px);
+            }
+            
+            to {
+                transform   :   translate(0px, 0px);
+            }
+            
+        }
+
+
+
+body #content #imageContent #phoneImgContainer #screenshotsContainer {
+    height    : 292px;
+    overflow  : hidden;
+}
+
+
+/* width=> no. of images*width of image */
+body #content #imageContent #phoneImgContainer #screenshotsContainer #screenshots {
+    
+    -webkit-animation-name              :   imageVertSlide;
+    -webkit-animation-duration          :   20s;
+    -webkit-animation-iteration-count   :   infinite;
+    -webkit-animation-timing-function   :   ease-out;
+    
+    -moz-animation-name              :   imageVertSlide;
+    -moz-animation-duration          :   20s;
+    -moz-animation-iteration-count   :   infinite;
+    -moz-animation-timing-function   :   ease-out;
+    
+    animation-name              :   imageVertSlide;
+    animation-duration          :   20s;
+    animation-iteration-count   :   infinite;
+    animation-timing-function   :   ease-out;
+}
+
+body #content #imageContent #phoneImgContainer #screenshots img {
+    display : block;
+}
+
+body #content #imageContent #imageContentDescription {
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   vertical;
+    -moz-box-orient     :   vertical;
+    box-orient          :   vertical;
+    
+    color               :   white;
+}
+
+body #content #imageContent #imageContentDescription #appDescriptionText{
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   vertical;
+    -moz-box-orient     :   vertical;
+    box-orient          :   vertical;
+    
+    -webkit-box-pack    :   center;
+    -moz-box-pack       :   center;
+    box-pack            :   center;
+}
+
+body #content #imageContent #imageContentDescription #appDescriptionText h3 {
+   border-radius            :   5px;
+   padding-left             :   5px;
+   background-image         : -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgba(0,0,0,0.5)),
+        color-stop(1.0, rgba(0,0,0,0.5))
+    );
+    
+    background-image        :  -moz-linear-gradient(rgba(0, 0, 0, 0.5) 10%, 
+                                             rgba(0, 0, 0, 0.5) 100%);
+                            
+}
+
+.no-cssgradients body #content #imageContent #imageContentDescription #appDescriptionText h3 {
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000)"
+   
+}
+
+.no-flexbox body #content #imageContent #imageContentDescription #appDescriptionText h3 {
+    margin-top  : 120px;	  
+}
+
+.no-flexbox body #content #imageContent #imageContentDescription #descriptionsContainer {
+    margin-top  : 100px;
+}
+
+body #content #imageContent #imageContentDescription #description{
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   vertical;
+    -moz-box-orient     :   vertical;
+    box-orient          :   vertical;
+    
+    -webkit-box-pack    :   start;
+    -moz-box-pack       :   start;
+    box-pack            :   start;
+}
+
+body #content #imageContent #imageContentDescription #description h5 {
+    
+    background-image    : -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgba(0,0,0,0.5)),
+        color-stop(1.0, rgba(0,0,0,0.5))
+    );
+    
+    background-image    :  -moz-linear-gradient(rgba(0, 0, 0, 0.5) 10%, 
+                                             rgba(0, 0, 0, 0.5) 100%);
+    border-radius       :   5px;
+    padding             :   0px 5px 0px 5px;
+    margin              :   0px;
+}
+
+.no-cssgradients body #content #imageContent #imageContentDescription #description h5 {
+	 
+	 /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000)"
+    
+}
+
+body #content #imageContent #imageContentDescription #like{
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   vertical;
+    -moz-box-orient     :   vertical;
+    box-orient          :   vertical;
+
+    -webkit-box-pack    :   center;
+    -moz-box-pack       :   center;
+    box-pack            :   center;
+}
+
+
+.no-flexbox body #content #imageContent #imageContentDescription #like {
+	   margin-top        :   120px;       
+}
+
+
+body #content #imageContent #imageContentDescription #like #plusOne {
+    margin-top           :  7px;
+}
+
+
+@-webkit-keyframes verticalSlide {
+            
+            /*translate by h5 height as specified in description container*/ 
+            
+            from,15% {
+                -webkit-transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                -webkit-transform   :   translate(0px, -20px);
+            }
+            
+            
+            40%,55% {
+                -webkit-transform   :   translate(0px, -40px);
+            }
+            
+            60%,75% {
+                -webkit-transform   :   translate(0px, -60px);
+            }
+            
+            
+            80%,95% {
+                -webkit-transform   :   translate(0px, -80px);
+            }
+            
+            to {
+                -webkit-transform   :   translate(0px, 0px);
+            }
+            
+        }
+
+
+@-moz-keyframes verticalSlide {
+            
+            /*translate by h5 height as specified in description container*/ 
+            
+            
+            from,15% {
+                -moz-transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                -moz-transform   :   translate(0px, -20px);
+            }
+            
+            
+            40%,55% {
+                -moz-transform   :   translate(0px, -40px);
+            }
+            
+            60%,75% {
+                -moz-transform   :   translate(0px, -60px);
+            }
+            
+            
+            80%,95% {
+                -moz-transform   :   translate(0px, -80px);
+            }
+            
+            to {
+                -moz-transform   :   translate(0px, 0px);
+            }
+            
+        }
+        
+@keyframes verticalSlide {
+            
+            /*translate by h5 height as specified in description container*/ 
+            
+            from,15% {
+                transform   :   translate(0px, 0px);
+            }
+            
+            
+            20%,35% {
+                transform   :   translate(0px, -20px);
+            }
+            
+            
+            40%,55% {
+                transform   :   translate(0px, -40px);
+            }
+            
+            60%,75% {
+                transform   :   translate(0px, -60px);
+            }
+            
+            
+            80%,95% {
+                transform   :   translate(0px, -80px);
+            }
+            
+            to {
+                transform   :   translate(0px, 0px);
+            }
+            
+        }
+
+
+
+
+body #content #imageContent #imageContentDescription #descriptionsContainer {
+    height    :   1.4em; /*h5 height+margin*/
+    overflow  : hidden;
+}
+
+body #content #imageContent #imageContentDescription #description {
+    -webkit-animation-name              :   verticalSlide;
+    -webkit-animation-duration          :   20s;
+    -webkit-animation-iteration-count   :   infinite;
+    -webkit-animation-timing-function   :   ease-out;
+    
+    -moz-animation-name              :   verticalSlide;
+    -moz-animation-duration          :   20s;
+    -moz-animation-iteration-count   :   infinite;
+    -moz-animation-timing-function   :   ease-out;
+    
+     animation-name              :   verticalSlide;
+     animation-duration          :   20s;
+     animation-iteration-count   :   infinite;
+     animation-timing-function   :   ease-out;
+}
+
+body #content #imageContent #imageContentDescription #description .descriptionText {
+   height                               :   20px;
+}
+
+body #content #downloadSection {
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;;
+    
+    -webkit-box-orient  :   vertical;
+    -moz-box-orient     :   vertical;
+    box-orient          :   vertical;
+    
+    -webkit-box-align   :   center;
+    -moz-box-align      :   center;
+    box-align           :   center;
+    
+    color               :   white;   
+}
+
+.no-flexbox body #content #downloadSection {
+    clear     :      both;
+}
+
+body #content #downloadSection #downloadArticle {
+    background-image    : -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgba(0,0,0,0.5)),
+        color-stop(1.0, rgba(0,0,0,0.5))
+    );
+    
+     background-image   :  -moz-linear-gradient(rgba(0, 0, 0, 0.5) 10%, 
+                                             rgba(0, 0, 0, 0.5) 100%); 
+    
+    display             :   -moz-box;
+    -moz-box-orient     :   vertical;
+    border-radius       :   10px;
+    padding             :   5px 10px 5px 10px;    
+}
+
+.no-cssgradients body #content #downloadSection #downloadArticle {
+   /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000)"
+}
+
+
+
+body #content #downloadSection #downloadArticle header{
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+    
+    -webkit-box-pack    :   start;
+    -moz-box-pack       :   start;
+    box-pack            :   start;
+    
+    margin-bottom       :   0px;
+}
+
+body #content #downloadSection #downloadArticle section {
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+}
+
+body #content #downloadSection #downloadArticle section img {
+    border              : 8px solid #fff;
+}
+
+.no-flexbox body #content #downloadSection #downloadArticle section img {
+	   float         : left;
+	   margin-right  : 50px;
+}
+
+body #content #downloadSection #downloadArticle section #downloadInstruction {
+   margin-left          :   25px;     
+}
+
+body footer {
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+    
+    -webkit-box-align    :   center;
+    -moz-box-align       :   center;
+    box-align            :   center;
+    
+    padding-top         :   20px;
+    padding-bottom      :   20px;  
+}
+
+body footer #about {
+    
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+ 
+    -webkit-box-pack    :   center;
+    -moz-box-pack       :   center;
+    box-pack            :   center;
+}
+
+body footer #about a {
+   color               : white;
+   text-decoration     : underline;
+}
+
+.no-flexbox body footer #about {
+    text-align  : left;
+}
+
+body footer #now_andrmkt {
+    -webkit-box-flex    :   1;
+    -moz-box-flex       :   1;
+    box-flex            :   1;
+    
+    display             :   -webkit-box;
+    display             :   -moz-box;
+    display             :   box;
+    
+    -webkit-box-orient  :   horizontal;
+    -moz-box-orient     :   horizontal;
+    box-orient          :   horizontal;
+    
+    -webkit-box-pack    :   center;
+    -moz-box-pack       :   center;
+    box-pack            :   center;
+    
+}
+
+body footer #now_andrmkt a img {
+    border-radius       : 10px;
+}
+
+.no-flexbox body footer #now_andrmkt {
+    text-align  : right;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/new_gig.css" rel="stylesheet" type="text/css" media="screen" />
+        <link type="text/css" href="../stylesheets/ui-lightness/jquery-ui-1.8.12.custom.css" rel="Stylesheet" />  
+        <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../scripts/jquery-ui-1.8.12.custom.min.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.ui.datetimepicker.js"></script>
+        <script type="text/javascript" src="../scripts/insert_gig.js"></script>
+        <title>Insert Gig</title>
+    </head>
+    <body>
+        <header>
+            <div id="welcomeblock">
+                <p>Hello {{username}}! {{successMsg}}</p>
+            </div>
+        </header>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="/admin/adminpage">New</a></li>
+                    <li><a href="/admin/view">View</a></li>
+                    <li><a href="/admin/find">Find</a></li>
+                    <li><a href="/feedback">Feedback</a></li>
+                    <li><a href="/admin/viewfeedback">View feedback</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>Enter gig details</p>
+               
+                <form id="gigform" method="POST" action="/new/gig">
+                    
+                    <div class="fieldsets">
+                        <label for="artist">Artist</label>
+                        <div class="forminput">
+                            <input type="text" name="artist" id="artist"  required>
+                        </div>
+                    </div>
+    
+                    <div class="fieldsets">
+                        <label for="venue">Venue</label>
+                        <div class="forminput">
+                            <input type="text" name="venue" id="venue"  required>    
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="city_loc">Location in city</label>
+                        <div class="forminput">
+                            <input type="text" name="city_loc" id="city_loc" required>                                
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="city">City</label>
+                        <div class="forminput">
+                            <select name="city" id="city">
+                              <option value="delhi">delhi</option>
+                              <option value="mumbai">mumbai</option>
+                              <option value="bangalore">bangalore</option>
+                              <option value="others">others</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="latlong">Map coordinates</label>
+                        <div class="forminput">
+                            <input type="text" name="latlong" id="latlong">                                
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="gig_url">URL</label>
+                        <div class="forminput">
+                            <input type="url" name="gig_url" id="gig_url">                                
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="genre">Genre</label>
+                        <div class="forminput">
+                            <input type="text" name="genre" id="genre"  required>                                
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="description">Description</label>
+                        <div class="forminput">
+                            <textarea id="description" name="description" cols="50" rows="5"></textarea>                                
+                        </div>
+                    </div>
+                    
+                    <div class="fieldsets">
+                        <label for="date_time">Schedule</label>
+                        <div class="forminput">
+                            <input type="text" name="date_time" id="date_time" required>        
+                        </div>
+                    </div>
+                    
+                    <div class="buttonset">
+                        <button type="submit">Save</button>
+                        <button type="button">Cancel</button>
+                    </div>
+                    
+                </form> 
+            </section>
+        </div>
+    </body>
+</html>

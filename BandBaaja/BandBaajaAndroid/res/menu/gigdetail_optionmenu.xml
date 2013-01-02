@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_addBookmarkGig"
+          android:title="@string/menu_addBookmarkGig" android:icon="@drawable/ic_menu_bookmark"/>
+    <item android:id="@+id/item_delBookmarkGig"
+          android:title="@string/menu_delBookmarkGig" android:icon="@drawable/ic_menu_bookmark"/>
+    <item android:id="@+id/item_showMap"
+          android:title="@string/menu_showMap" android:icon="@drawable/ic_menu_map"/>
+    <item android:id="@+id/item_shareGig"
+          android:title="@string/menu_shareGig" android:icon="@drawable/ic_menu_share"/>
+    <item android:id="@+id/item_moreInfo"
+          android:title="@string/menu_moreInfo" android:icon="@drawable/ic_menu_more"/>
+</menu>

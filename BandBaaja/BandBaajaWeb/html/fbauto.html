@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="../stylesheets/fbauto.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script>
+      
+    </script>
+    <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+    <script src="../scripts/FbGetEvents.js"></script>
+    <script src="../scripts/fbauto.js"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div id="fb-buttons">
+        <button id="fb-login">Login</button>
+        <button id="fbSince">Since</button>
+        <button id="fbUntil">Until</button>
+    </div>
+    <div>
+        <form>
+          <div class="fieldsets">
+                <label for="eventId">Event Id</label>
+                <div class="forminput">
+                   <input type="text" name="eventId" id="eventId" required>
+                </div>
+          </div>
+          <div class="buttonset">
+              <button type="button" id="getEvent">Get Event</button>
+          </div>  
+        </form>
+    </div>
+    <div>
+        <form>
+          <div class="fieldsets">
+                <label for="fbId">Graph Id</label>
+                <div class="forminput">
+                   <input type="text" name="fbId" id="fbId" value="170469886305705" required>
+                </div>
+          </div>
+          <div class="buttonset">
+              <button type="button" id="idParser">Parse</button>
+          </div>
+          <div class="buttonset">
+              <button type="button" id="parseWatScene">WatScene Parse</button>
+              <button type="button" id="fbWatSceneSince">WatScene Since</button>
+              <button type="button" id="fbWatSceneUntil">WatScene Until</button>
+          </div>  
+        </form>
+    </div>
+    <div id="eventsDiv"></div>
+  </body>
+  
+</html>

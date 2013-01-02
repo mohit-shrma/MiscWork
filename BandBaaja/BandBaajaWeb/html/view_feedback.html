@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/view_feedback.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../scripts/feedback_view.js"></script>
+        <title>Feedback View</title>
+    </head>
+    <body>
+      <header>
+          <div id="welcomeblock">
+              <p>Hello {{username}}! 
+              {%if success_msg%}
+                {{success_msg}}.
+              {% endif %}
+              {{feedbackslen}} results found.</p>
+          </div>
+      </header>
+      <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="/admin/adminpage">New</a></li>
+                    <li><a href="/admin/view">View</a></li>
+                    <li><a href="/admin/find">Find</a></li>
+                    <li><a href="/feedback">Feedback</a></li>
+                    <li><a href="/admin/viewfeedback">View feedback</a></li>
+                </ul>
+            </nav>
+            <section>
+              <form action="" method="POST" id="viewform">
+                <input type="hidden" name="lastResultIndex" value="{{lastResultIndex}}">
+                <input type="hidden" name="goToNext" id="goToNext" value="">
+                <input type="hidden" name="goToPrevious" id="goToPrevious" value="">
+                <table>
+                  <thead>
+                      <th></th>
+                      <th scope="col" abbr="Feedback">Feedback</th>
+                      <th scope="col" abbr="Timestamp">Timestamp</th>
+                      <th scope="col" abbr="Unique Id">Id</th>
+                  </thead>
+                  <tbody>
+                    {% for feedback in feedbacks %}
+                      <tr>
+                          <td>
+                              <input type="checkbox" name="feedback_id" value="{{ feedback.key.id }}"/>
+                          </td>                                
+                          <td width="20%" class="feedback">
+                              {{ feedback.feedback}}
+                          </td>                                
+                          <td>
+                              {{ feedback.timestamp|date:"D, d M Y, H:i:s" }}
+                          </td>
+                          <td>
+                              {{ feedback.uniqueId }}
+                          </td>                                  
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+                
+                <div class="buttonset">
+                    <div class="left">
+                        <button type="button" id="delete">Delete</button>
+                    </div>
+                    <div class="right">
+                        {% if previous %}
+                          <button type="button" id="previous">Previous</button>
+                        {% endif %}
+                        {% if next %}
+                          <button type="button" id="next">Next</button>
+                        {% endif %}
+                    </div>
+                </div>
+              </form>
+            </section>
+       </div>     
+      
+    </body>
+</html>

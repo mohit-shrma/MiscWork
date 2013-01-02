@@ -1,0 +1,71 @@
+/*imports*/
+@import url("common.css");
+
+
+section table {
+    
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+
+section table th {
+    text-align  : center;
+    font-weight : bold;
+}
+
+section table thead th:empty {
+    background  :   transparent;
+    border      :   none;
+}
+
+section table tbody td {
+    text-align  :   center;
+}
+
+section table tbody tr:nth-child(odd) {
+    background: #e4ecf9;
+}
+
+section table tbody tr:nth-child(even) {
+}
+
+section .buttonset {
+    padding              : 0 10px 0 10px;
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    
+    display             :   -moz-box;
+    -moz-box-orient  :   horizontal;
+    
+    display             :   box;
+    box-orient  :   horizontal;
+}
+
+section .buttonset .left {
+    -webkit-box-flex    :   1;
+    display             :   -webkit-box;
+    -webkit-box-pack    :   start;
+    
+    -moz-box-flex    :   1;
+    display             :   -moz-box;
+    -moz-box-pack    :   start;
+    
+    box-flex    :   1;
+    display             :   box;
+    box-pack    :   start;
+}
+
+section .buttonset .right {
+    -webkit-box-flex    :   1;
+    display             :   -webkit-box;
+    -webkit-box-pack    :   end;
+    
+    -moz-box-flex    :   1;
+    display             :   -moz-box;
+    -moz-box-pack    :   end;
+    
+    box-flex    :   1;
+    display             :   box;
+    box-pack    :   end;
+}

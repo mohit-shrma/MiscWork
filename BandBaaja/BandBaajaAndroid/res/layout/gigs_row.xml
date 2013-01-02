@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+
+    
+    <ImageView android:id="@+id/itemBookmarked"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:visibility="invisible"
+        android:src="@drawable/bookmark_indicator"/>    
+    
+    <TextView android:id="@+id/gigVenue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@id/itemBookmarked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+        
+    <TextView android:id="@+id/gigArtist"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         
+         android:layout_toLeftOf="@id/itemBookmarked"
+         android:layout_below="@id/gigVenue"
+         android:layout_alignParentLeft="true"
+         android:textStyle="bold"
+         android:textSize="18dip"/>
+         
+    <TextView android:id="@+id/gigDayDate"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         
+         android:layout_toLeftOf="@id/itemBookmarked"
+         android:layout_below="@id/gigArtist"
+         android:layout_alignParentLeft="true"/>
+
+
+    <TextView android:id="@+id/gigCityLoc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    
+        android:layout_toLeftOf="@id/itemBookmarked"
+        android:layout_below="@id/gigDayDate"
+        android:layout_alignParentLeft="true"/>
+
+        
+</RelativeLayout>

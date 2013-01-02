@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView android:id="@+id/gigDetailBookmarked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentRight="true"
+        
+        android:visibility="invisible"
+        android:src="@drawable/bookmark_indicator"
+        android:layout_marginRight="6dip"/>
+    
+    <TextView android:id="@+id/gigDetailArtist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@id/gigDetailBookmarked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="18dip"
+        android:layout_marginLeft="6dip"/>
+
+    
+        <TextView android:id="@+id/gigDetailGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@id/gigDetailBookmarked"
+        android:layout_below="@id/gigDetailArtist"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dip"/>
+    
+
+    <TextView android:id="@+id/gigDetailDayDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_toLeftOf="@id/gigDetailBookmarked"
+        android:layout_below="@id/gigDetailGenre"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dip"/>
+    
+    <TextView android:id="@+id/gigDetailFullLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@id/gigDetailBookmarked"
+        android:layout_below="@id/gigDetailDayDate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dip"/>
+    
+    <View android:id="@+id/gigDetailDescSeparator"
+        android:layout_width="fill_parent" 
+        android:layout_height="2dp" 
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/gigDetailFullLocation" 
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+    
+    
+    <com.google.ads.AdView 
+                android:id="@+id/gigDetailAdView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adUnitId="@string/admob_publisher_id"
+                ads:adSize="BANNER"/>     
+    
+    <ScrollView android:id="@+id/gigDetailDescView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gigDetailAdView"
+        android:layout_below="@id/gigDetailDescSeparator"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip">
+        <TextView android:id="@+id/gigDetailDescription"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="12dip"/>
+    </ScrollView>
+    
+    
+</RelativeLayout>

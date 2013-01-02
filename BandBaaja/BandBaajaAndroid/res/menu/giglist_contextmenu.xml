@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_openGig"
+          android:title="@string/menu_openGig"/>
+    <item android:id="@+id/item_addBookmarkGig"
+          android:title="@string/menu_addBookmarkGig"/>
+    <item android:id="@+id/item_delBookmarkGig"
+          android:title="@string/menu_delBookmarkGig"/>
+    <item android:id="@+id/item_shareGig"
+          android:title="@string/menu_shareGig"/>
+</menu>

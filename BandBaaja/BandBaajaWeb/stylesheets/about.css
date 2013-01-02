@@ -1,0 +1,152 @@
+/*imports*/
+@import url("publicSiteCommon.css");
+@import url(http://fonts.googleapis.com/css?family=Redressed&v2);
+
+body {
+    background          :   #474747 url('../images/bg.png');
+    
+    display             :   -moz-box;
+    -moz-box-orient     :   vertical;
+    
+    display             :   -webkit-box;
+    -webkit-box-orient  :   vertical;
+    
+    display             :   box;
+    box-orient          :   vertical;
+}
+
+.no-flexbox body {
+     width   : 900px;
+     margin  : 0 auto;
+}
+
+body header {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    
+    display             :   -moz-box;
+    -moz-box-orient     :   horizontal;
+    
+    display             :   box;
+    box-orient          :   horizontal;
+    
+    padding             :   0px 50px 0px 50px;
+}
+
+body header #appTitleContainer {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   center;
+    -webkit-box-flex    :   1;
+    
+    display             :   -moz-box;
+    -moz-box-orient  :   horizontal;
+    -moz-box-align   :   center;
+    -moz-box-pack    :   center;
+    -moz-box-flex    :   1;
+    
+    display             :   box;
+    box-orient          :   horizontal;
+    box-align           :   center;
+    box-pack            :   center;
+    box-flex            :   1;
+    
+    
+    font-family                 :   'Redressed','Trebuchet MS', Trebuchet, 
+                                     'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+                                     Arial, sans-serif;
+    font-size                   :   60px;
+    font-style                  : normal;
+    font-weight                 : 400;
+    /*text-shadow                 : 4px 4px 4px #ddd;*/
+    text-shadow                 : 0 3px 8px #2a2a2a;
+    margin-top                  : 30px;
+    
+    -webkit-text-fill-color     : #999;
+    -webkit-text-stroke-color   : #999;
+    -webkit-text-stroke-width   : 1px;
+    -webkit-user-select         : none;
+    
+    -moz-text-fill-color     : #999;
+    -moz-text-stroke-color   : #999;
+    -moz-text-stroke-width   : 1px;
+    -moz-user-select         : none;
+    
+    text-fill-color     : #999;
+    text-stroke-color   : #999;
+    text-stroke-width   : 1px;
+    user-select         : none;
+    
+    cursor                      : pointer;
+    
+}
+
+.no-flexbox header #appTitleContainer h2 {
+    float:left;
+ }
+
+body header #logoContainer {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-align   :   center;
+    -webkit-box-pack    :   center;
+    -webkit-box-flex    :   1;
+    
+    display             :   -moz-box;
+    -moz-box-orient  :   horizontal;
+    -moz-box-align   :   center;
+    -moz-box-pack    :   center;
+    -moz-box-flex    :   1;
+    
+    display             :   box;
+    box-orient  :   horizontal;
+    box-align   :   center;
+    box-pack    :   center;
+    box-flex    :   1;
+}
+
+.no-flexbox body header #logoContainer {
+    float   :   right;
+}
+
+body #contentContainer {
+    display             :   -webkit-box;
+    -webkit-box-orient  :   horizontal;
+    -webkit-box-pack    :   center;
+    
+    display             :   -moz-box;
+    -moz-box-orient     :   horizontal;
+    -moz-box-pack       :   center;
+    
+    display             :   box;
+    box-orient          :   horizontal;
+    box-pack            :   center;
+    
+    margin-top          :   30px;
+}
+
+.no-flexbox body #contentContainer {
+  clear : both;
+}
+
+ 
+
+body #contentContainer #content {
+    background          :   #222;
+    padding             :   20px;
+    color               :   #555;
+    border-radius       :   10px;
+    text-shadow         :   0px 2px 3px #171717;
+    width               :   800px;
+    
+    -webkit-box-shadow  :   0px 2px 3px #555;
+
+    -moz-box-shadow     :   0px 2px 3px #555;
+    
+    box-shadow          :   0px 2px 3px #555;
+}
+
+body #content .titleInfo {
+    padding             :   20px;
+}

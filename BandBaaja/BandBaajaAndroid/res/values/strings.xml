@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">BandBaaja</string>
+    <string name="welcome_next">Next</string>
+    <string name="settings_save">Save</string>
+    <string name="get_data">Get Data</string>
+    <string name="show_data">Show Data</string>
+    <string name="more_info">More Details</string>
+    <string name="delete_gigs_data">Delete Gigs</string>
+    <string name="delete_pref_data">Delete Preferences</string>
+    <string name="create_pref_data">Create Preferences</string>
+    <string name="no_gigs">No Gigs</string>
+    <string name="search_gigs">Search Gigs</string>
+    <string name="search_bookmarks">Search Bookmarks</string>
+    <string name="no_bookmarks">No bookmarks added yet</string>
+    <string name="menu_openGig">Open Gig</string>
+    <string name="menu_addBookmarkGig">Bookmark</string>
+    <string name="menu_delBookmarkGig">Remove Bookmark</string>
+    <string name="menu_shareGig">Share</string>
+    <string name="menu_moreInfo">More</string>
+    <string name="menu_showMap">Show on map</string>
+    <string name="menu_refreshGigs">Refresh</string>
+    <string name="share_facebook">Facebook</string>
+    <string name="share_twitter">Twitter</string>
+    <string name="share_mail">Mail</string>
+    <string name="share_message">Message</string>
+    <string name="share_ask_pin">Enter your one time PIN</string>
+    <string name="tweet_failed">Tweet failed. Please try again later.</string>
+    <string name="tweet_successful">Tweet successful.</string>
+    <string name="tweet_setup_failed">Twitter one time setup failed. Please try again later.</string>
+    <string name="tweet_setup_failed_title">Twitter one time setup</string>
+    <!--<string name="server_url">http://bandbaajabeta.appspot.com</string>-->
+    <string name="server_url">http://www.thebandbaaja.com</string>
+    <!-- <string name="server_url">http://10.0.2.2:8080</string>  -->
+    <string name="city_prompt">City</string>
+    <string name="share_prompt">Choose a sharing option</string>
+    <string name="network_coverage_insufficient">Internet can not be reached. Please try again later.</string>
+    <string name="network_err_title">No network connection</string>
+    <string name="refresh_err_title">Refresh failed</string>
+    <string name="gigs_refresh_success_msg">Gigs refresh successful.</string>
+    <string name="gigs_refresh_fail_msg">Gigs refresh failed. Please try again later.</string>
+    <string name="feedback_success_msg">Feedback submission successful.</string>
+    <string name="feedback_fail_msg">Feedback submission failed. Please try again later.</string>
+    <string name="giglist_progress_msg">Refreshing gigs. Please wait...</string>
+    <string name="feedback_progress_msg">Submitting. Please wait...</string>
+    <string name="settings_progress_msg">Changing city and refreshing gigs. Please wait...</string>
+    <string name="welcomepref_progress_msg">Saving settings and refreshing gigs. Please wait...</string>
+    <string name="tweet_progress_msg">Tweeting event. Please wait...</string>
+    <string name="feedback_send">Help us to make your experience better</string>
+    <string-array name="city_array">
+        <item>Bangalore</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Others</item>
+    </string-array>
+    <string name="bangalore_latitude">12.972045</string>
+    <string name="bangalore_longitude">77.594612</string>
+    <string name="mumbai_latitude">19.017798</string>
+    <string name="mumbai_longitude">72.856146</string>
+    <string name="delhi_latitude">28.632902</string>
+    <string name="delhi_longitude">77.219773</string>
+    <string name="others_latitude">28.632902</string>
+    <string name="others_longitude">77.219773</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="share_title">Share with your friends</string>
+    <string name="analytics_id">xxxx</string>
+    <string name="admob_publisher_id">xxxx</string>
+    <string name="notification_check">Notifications</string>
+    <string name="text_notification">Notifications</string>
+    <string name="feedback_button">Feedback</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+    
+    <EditText
+        android:id="@+id/searchBox"
+        android:inputType="text"
+        android:singleLine="true"
+        
+        
+        android:imeOptions="actionDone|flagNoExtractUi"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:hint="@string/search_gigs"/>
+    
+    <ImageButton
+         android:id="@+id/btnClearSearch"
+         android:background="@android:drawable/ic_menu_close_clear_cancel"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="2dp"
+         android:visibility="gone"
+         android:layout_alignParentRight="true"          
+         android:layout_alignTop="@id/searchBox"/>
+    
+    <ListView android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:layout_below="@id/searchBox"
+            android:layout_alignParentLeft="true"/>
+     
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/emptyview">
+            <TextView android:id="@+id/android:empty"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/no_gigs"
+		            android:textSize="20sp" 
+		            android:gravity="center"/> 
+     </LinearLayout>
+     
+     
+    
+</RelativeLayout>

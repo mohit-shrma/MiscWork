@@ -1,0 +1,30 @@
+application: thebandbaaja
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+ 
+- url: /scripts
+  static_dir: scripts
+
+- url: /images
+  static_dir: images
+  
+- url: /
+  static_files: html/home.html
+  upload: html/home.html
+
+
+- url: /about.html
+  static_files: html/about.html
+  upload: html/about.html
+
+- url: /cocktales
+  static_files: html/cocktales.html
+  upload: html/cocktales.html
+
+- url: /.*
+  script: myapplication.py

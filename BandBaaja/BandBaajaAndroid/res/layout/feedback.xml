@@ -1,0 +1,41 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" 
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:orientation="vertical" 
+              android:id="@+id/linearLayout1">
+    <TextView android:text="@string/feedback_send" 
+              android:id="@+id/feedbackFormTitle" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_marginLeft="10dip" 
+              android:layout_marginTop="20dip" android:layout_centerHorizontal="true" android:layout_marginBottom="5dip">
+    </TextView>
+    <EditText android:id="@+id/feedbackText" 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:lines="3"
+              android:layout_below="@id/feedbackFormTitle" 
+              android:layout_marginLeft="10dip" 
+              android:layout_marginRight="10dip" android:layout_marginTop="5dip">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Button android:id="@+id/submitFeedback" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:text="@string/feedback_submit"
+            android:layout_below="@id/feedbackText" 
+            android:layout_marginLeft="10dip" 
+            android:layout_marginRight="10dip" android:layout_marginTop="5dip">
+    </Button>
+    
+    <com.google.ads.AdView 
+                android:id="@+id/feedbackAdView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adUnitId="@string/admob_publisher_id"
+                ads:adSize="BANNER"/> 
+    
+</RelativeLayout>
